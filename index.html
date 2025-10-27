@@ -1,1 +1,674 @@
-sddd
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partial Bangs Hair Wig - Neylna Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffeef8 100%);
+        }
+        
+        .product-image {
+            transition: all 0.3s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+        
+        .modal-content {
+            animation: modalFadeIn 0.3s ease;
+        }
+        
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .new-order-notification {
+            animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; visibility: hidden; }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .strikethrough {
+            position: relative;
+        }
+        
+        .strikethrough:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #ef4444;
+            transform: translateY(-50%) rotate(-5deg);
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn.orderonline.id/uploads/images_8057731750768190275.png" alt="Neylna Store" class="h-10 mr-2">
+                <span class="text-xl font-bold text-pink-600">Neylna Store</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#produk" class="text-gray-700 hover:text-pink-600 font-medium">Produk</a>
+                <a href="#fitur" class="text-gray-700 hover:text-pink-600 font-medium">Fitur</a>
+                <a href="#testimoni" class="text-gray-700 hover:text-pink-600 font-medium">Testimoni</a>
+                <a href="#beli" class="text-gray-700 hover:text-pink-600 font-medium">Beli Sekarang</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#produk" class="text-gray-700 hover:text-pink-600 font-medium py-2">Produk</a>
+                <a href="#fitur" class="text-gray-700 hover:text-pink-600 font-medium py-2">Fitur</a>
+                <a href="#testimoni" class="text-gray-700 hover:text-pink-600 font-medium py-2">Testimoni</a>
+                <a href="#beli" class="text-gray-700 hover:text-pink-600 font-medium py-2">Beli Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+                    Tampil Lebih Muda & Stylish dengan <span class="text-pink-600">Partial Bangs Hair Wig</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-6">
+                    Rambut depan alami yang bisa mengubah penampilan Anda dalam hitungan detik. Cocok untuk berbagai bentuk wajah!
+                </p>
+                <div class="flex items-center mb-6">
+                    <div class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mr-3">
+                        <i class="fas fa-star mr-1"></i> 4.9/5 (1.2K+ ulasan)
+                    </div>
+                    <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                        <i class="fas fa-check-circle mr-1"></i> Ready Stock
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <span class="text-3xl font-bold text-pink-600">Rp 214.000</span>
+                    <span class="text-xl text-gray-500 ml-2 strikethrough">Rp 321.000</span>
+                    <span class="ml-2 bg-red-100 text-red-800 px-2 py-1 rounded text-sm font-medium">Diskon 33%</span>
+                </div>
+                <a href="#beli" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300 transform hover:scale-105">
+                    <i class="fas fa-shopping-cart mr-2"></i> BELI SEKARANG
+                </a>
+                <div class="mt-4 text-sm text-gray-500">
+                    <i class="fas fa-shield-alt mr-1"></i> Garansi 100% Uang Kembali jika tidak puas
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://cdn.wshopon.com/image/4c4e2885dc0a245907068c3dbd46000a21cc8c6c.webp" alt="Partial Bangs Hair Wig" class="rounded-lg shadow-xl max-w-full h-auto md:h-96 object-contain pulse">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section id="produk" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Galeri Produk</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="cursor-pointer" onclick="openModal('https://cdn.wshopon.com/image/c939893cb1fb35999d6a31a726285be0e369a418-800.webp')">
+                    <img src="https://cdn.wshopon.com/image/c939893cb1fb35999d6a31a726285be0e369a418-800.webp" alt="Partial Bangs Hair Wig" class="w-full h-48 object-cover">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.wshopon.com/image/1b3a7489aba46efb6b42dc0791efda277fb2fa89-800.webp')">
+                    <img src="https://cdn.wshopon.com/image/1b3a7489aba46efb6b42dc0791efda277fb2fa89-800.webp" alt="Partial Bangs Hair Wig" class="w-full h-48 object-cover">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.wshopon.com/image/6cc6b58b97cbe78e769a6c1973380bc5cb19f83c-800.webp')">
+                    <img src="https://cdn.wshopon.com/image/6cc6b58b97cbe78e769a6c1973380bc5cb19f83c-800.webp" alt="Partial Bangs Hair Wig" class="w-full h-48 object-cover">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.wshopon.com/image/58a61d8c23a84d43d3ea3440cc0dd25c2a11f28e-800.webp')">
+                    <img src="https://cdn.wshopon.com/image/58a61d8c23a84d43d3ea3440cc0dd25c2a11f28e-800.webp" alt="Partial Bangs Hair Wig" class="w-full h-48 object-cover">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.wshopon.com/image/58a61d8c23a84d43d3ea3440cc0dd25c2a11f28e-800.webp')">
+                    <img src="https://cdn.wshopon.com/image/58a61d8c23a84d43d3ea3440cc0dd25c2a11f28e-800.webp" alt="Partial Bangs Hair Wig" class="w-full h-48 object-cover">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.wshopon.com/image/52f0bef1f89d2ff87feba7d89984fb8f341eb92c-800.webp')">
+                    <img src="https://cdn.wshopon.com/image/52f0bef1f89d2ff87feba7d89984fb8f341eb92c-800.webp" alt="Partial Bangs Hair Wig" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section class="py-12 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Masalah Rambut Anda?</h2>
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-times text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Rambut Tipis & Botak di Bagian Depan</h3>
+                                <p class="text-gray-600">Membuat penampilan terlihat lebih tua dari usia sebenarnya</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-times text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Sulit Membentuk Bangs yang Rapi</h3>
+                                <p class="text-gray-600">Butuh waktu lama untuk styling setiap pagi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-times text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Rambut Rusak Akibat Sering Diwarnai</h3>
+                                <p class="text-gray-600">Terlihat kusam dan tidak sehat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Solusi dari Partial Bangs Hair Wig</h2>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-green-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Penampilan Instan Lebih Muda</h3>
+                                <p class="text-gray-600">Tutupi area botak atau tipis dengan mudah dalam hitungan detik</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="bg-green-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Bangs Sempurna Setiap Saat</h3>
+                                <p class="text-gray-600">Tanpa perlu styling rumit setiap pagi</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Rambut Terlihat Lebih Tebal & Sehat</h3>
+                                <p class="text-gray-600">Tekstur alami yang menyatu dengan rambut asli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="fitur" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Keunggulan Partial Bangs Hair Wig</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-pink-50 rounded-lg p-6 text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Natural Look</h3>
+                    <p class="text-gray-600">Tampilan alami seperti rambut asli, sulit dibedakan</p>
+                </div>
+                <div class="bg-pink-50 rounded-lg p-6 text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-weight text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Ringan & Nyaman</h3>
+                    <p class="text-gray-600">Hanya 25 gram, tidak terasa seperti memakai wig</p>
+                </div>
+                <div class="bg-pink-50 rounded-lg p-6 text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Pemasangan Cepat</h3>
+                    <p class="text-gray-600">Cukup jepitkan ke rambut asli dalam 10 detik</p>
+                </div>
+                <div class="bg-pink-50 rounded-lg p-6 text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-broom text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Mudah Perawatan</h3>
+                    <p class="text-gray-600">Bisa dicuci dan disisir seperti rambut biasa</p>
+                </div>
+                <div class="bg-pink-50 rounded-lg p-6 text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-palette text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Warna Natural</h3>
+                    <p class="text-gray-600">Pilihan warna yang cocok untuk kulit Indonesia</p>
+                </div>
+                <div class="bg-pink-50 rounded-lg p-6 text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Tahan Lama</h3>
+                    <p class="text-gray-600">Bisa digunakan hingga 6 bulan dengan perawatan tepat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimoni" class="py-12 gradient-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Apa Kata Mereka?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-100 text-pink-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">A</div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">Anita - Ibu Rumah Tangga</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sejak menopause rambut depan saya menipis. Wig ini benar-benar mengubah penampilan saya. Suami sampai kaget dan bilang saya terlihat lebih muda 10 tahun!"</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">D</div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">Dina - Karyawan Bank</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Saya sering stress kerja sampai rambut rontok. Partial bangs ini solusi praktis. Rekan kerja tidak ada yang tahu ini wig, mereka pikir saya potong rambut baru!"</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 text-purple-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">R</div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">Rina - Mahasiswa</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Saya suka ganti-ganti style rambut tapi takut merusak rambut asli. Dengan wig ini bisa punya bangs tanpa harus memotong rambut. Sangat worth it harganya!"</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 text-green-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">S</div>
+                        <div>
+                            <h3 class="font-bold text-gray-800">Sari - Pengusaha</h3>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sebagai pengusaha, penampilan sangat penting. Wig ini membuat saya selalu terlihat rapi tanpa perlu waktu lama di depan cermin. Pelanggan jadi lebih respect!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="beli" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl shadow-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-8 md:p-12 text-white">
+                        <h2 class="text-3xl font-bold mb-4">Partial Bangs Hair Wig</h2>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">Rp 214.000</span>
+                            <span class="text-xl ml-2 strikethrough">Rp 321.000</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-white bg-opacity-20 p-1 rounded-full mr-2">
+                                <i class="fas fa-truck text-xs"></i>
+                            </div>
+                            <span>Gratis Ongkir Khusus Hari Ini</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-white bg-opacity-20 p-1 rounded-full mr-2">
+                                <i class="fas fa-shield-alt text-xs"></i>
+                            </div>
+                            <span>Garansi 100% Uang Kembali</span>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div class="bg-white bg-opacity-20 p-1 rounded-full mr-2">
+                                <i class="fas fa-box-open text-xs"></i>
+                            </div>
+                            <span>Stok Tersisa: <span id="stock-counter">47</span> pcs</span>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4 mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span>Promo Berakhir Dalam:</span>
+                                <span id="countdown" class="font-bold">23:59:59</span>
+                            </div>
+                            <div class="w-full bg-white bg-opacity-30 rounded-full h-2">
+                                <div class="bg-yellow-300 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="text-sm mb-4">
+                            <i class="fas fa-users mr-1"></i> <span id="view-counter">1,248</span> orang sedang melihat produk ini
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 bg-white p-8 md:p-12">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Form Pemesanan</h3>
+                        <!-- OrderOnline Embed Code - v8.0.4 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="nava" data-product-slug="partial-bangs-hair-wig" data-product-id="68fef613c756373d1609b7b6" id="oo-embed-form-partial-bangs-hair-wig-373" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://nava.orderonline.id'); ooe('init', '5f119cd08dcbdb2737678706', '68fef613c756373d1609b7b6', null, 'oo-embed-form-partial-bangs-hair-wig-373', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
+                        <div class="mt-6 border-t pt-6">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 text-green-800 p-2 rounded-full mr-3">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Pembayaran Aman</h4>
+                                    <p class="text-sm text-gray-600">Data Anda terlindungi dengan enkripsi 256-bit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-12 gradient-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Pertanyaan yang Sering Diajukan</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                        <span>Bagaimana cara pemasangan Partial Bangs Hair Wig?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                        Sangat mudah! Cukup jepitkan wig ke rambut asli Anda di bagian depan menggunakan klip yang sudah terpasang. Tidak perlu lem atau alat khusus. Dalam 10 detik penampilan Anda sudah berubah!
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                        <span>Apakah wig ini terlihat alami?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                        Ya! Partial Bangs Hair Wig dibuat dengan serat rambut premium yang teksturnya mirip rambut asli. Warna dan ketebalannya juga disesuaikan agar menyatu sempurna dengan rambut Anda. Banyak pelanggan kami yang mengaku bahkan suami/anak mereka tidak menyadari ini adalah wig!
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                        <span>Berapa lama pengiriman sampai ke saya?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                        Kami menggunakan ekspedisi terpercaya dengan estimasi pengiriman 2-4 hari kerja untuk Jabodetabek dan 3-7 hari kerja untuk luar Jabodetabek. Anda akan mendapatkan nomor resi yang bisa dilacak via website ekspedisi.
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                        <span>Bagaimana cara perawatannya?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                        Anda bisa mencuci wig ini 1-2 minggu sekali dengan shampoo ringan, bilas dengan air dingin, dan keringkan secara alami. Untuk styling, bisa menggunakan catokan dengan suhu maksimal 180°C. Hindari produk hairspray yang mengandung alkohol tinggi.
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                        <span>Apakah ada garansi?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden p-4 pt-0 text-gray-600">
+                        Kami memberikan garansi 100% uang kembali jika produk tidak sesuai deskripsi atau ada kerusakan saat pengiriman. Silakan hubungi customer service kami dalam 7 hari setelah produk diterima untuk klaim garansi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="https://cdn.orderonline.id/uploads/images_8057731750768190275.png" alt="Neylna Store" class="h-8 mr-2">
+                        <span class="text-xl font-bold">Neylna Store</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Solusi Kecantikan Rambut Modern</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Neylna Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- New Order Notification -->
+    <div id="new-order-notification" class="new-order-notification fixed bottom-4 right-4 bg-white rounded-lg shadow-xl p-4 max-w-xs z-50 hidden">
+        <div class="flex items-start">
+            <div class="bg-green-100 text-green-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div>
+                <p class="text-sm font-medium text-gray-800 mb-1"><span id="customer-name">Sarah</span> dari <span id="customer-location">Bandung</span> baru saja membeli!</p>
+                <p class="text-xs text-gray-500">Baru saja · Partial Bangs Hair Wig</p>
+            </div>
+            <button onclick="closeNotification()" class="ml-2 text-gray-400 hover:text-gray-600">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="modal-content relative max-w-4xl w-full p-4">
+            <button onclick="closeModal()" class="absolute -top-10 right-0 text-white hover:text-gray-300">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <img id="modal-image" src="" alt="" class="w-full h-auto max-h-screen object-contain">
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 0);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Stock Counter Animation
+        function animateStockCounter() {
+            let stock = 47;
+            const counter = document.getElementById('stock-counter');
+            
+            setInterval(() => {
+                if (stock > 0 && Math.random() > 0.7) {
+                    stock--;
+                    counter.textContent = stock;
+                    
+                    if (stock < 10) {
+                        counter.classList.add('text-red-600');
+                        counter.classList.add('font-bold');
+                    }
+                }
+            }, 30000);
+        }
+        
+        animateStockCounter();
+
+        // View Counter Animation
+        function animateViewCounter() {
+            let views = 1248;
+            const counter = document.getElementById('view-counter');
+            
+            setInterval(() => {
+                views += Math.floor(Math.random() * 3);
+                counter.textContent = views.toLocaleString();
+            }, 5000);
+        }
+        
+        animateViewCounter();
+
+        // New Order Notification
+        const names = ['Sarah', 'Dewi', 'Rina', 'Anita', 'Siti', 'Linda', 'Maya', 'Diana'];
+        const locations = ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Semarang', 'Yogyakarta', 'Bali', 'Makassar'];
+        
+        function showNewOrder() {
+            const notification = document.getElementById('new-order-notification');
+            const customerName = document.getElementById('customer-name');
+            const customerLocation = document.getElementById('customer-location');
+            
+            customerName.textContent = names[Math.floor(Math.random() * names.length)];
+            customerLocation.textContent = locations[Math.floor(Math.random() * locations.length)];
+            
+            notification.classList.remove('hidden');
+            
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 3000);
+        }
+        
+        function closeNotification() {
+            document.getElementById('new-order-notification').classList.add('hidden');
+        }
+        
+        // Show first notification after 5 seconds
+        setTimeout(showNewOrder, 5000);
+        
+        // Then show every 20-40 seconds
+        setInterval(showNewOrder, 20000 + Math.random() * 20000);
+
+        // Image Modal
+        function openModal(imageSrc) {
+            const modal = document.getElementById('image-modal');
+            const modalImage = document.getElementById('modal-image');
+            
+            modalImage.src = imageSrc;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('image-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('image-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+        
+        // Close modal with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !document.getElementById('image-modal').classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
